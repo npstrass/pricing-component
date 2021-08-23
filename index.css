@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+:root {
+  --bg-slider: hsl(174, 86%, 45%);
+  --bg-discount: hsl(14, 92%, 95%);
+  --bg-price-component: hsl(0, 0%, 100%);
+  --bg-main: hsl(230, 100%, 99%);
+  --bg-toggle: hsl(223, 50%, 87%);
+  --bg-text-and-cta: hsl(227, 35%, 25%);
+  --empty-slider: hsl(224, 65%, 95%);
+  --full-slider: hsl(174, 77%, 80%);
+  --text-discount: hsl(15, 100%, 70%);
+  --text-cta: hsl(226, 100%, 87%);
+  --text: hsl(225, 20%, 60%);
+
+  font-size: 15px;
+  /* weights 600 and 800 */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+* {
+  margin: 0;
+}
