@@ -12,6 +12,7 @@
   appearance: none;
   width: 100%;
   height: 0.5rem;
+  border-radius: 0.5rem;
   background: hsl(224, 65%, 95%);
   outline: none;
   opacity: 0.7;
@@ -38,8 +39,26 @@
 }
 
 .slider::-moz-range-thumb {
+  -moz-appearance: none;
   width: 2.25rem;
   height: 2.25rem;
-  background: hsl(174, 86%, 45%);
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background: url(images/icon-slider.svg), hsl(174, 86%, 45%);
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.slider::-moz-range-progress {
+  height: 100%;
+  border-radius: 0.5rem;
+  background: hsl(174, 77%, 80%);
+}
+
+.slider::-ms-fill-lower {
+  height: 100%;
+  border-radius: 0.5rem;
+  background: hsl(174, 77%, 80%);
 }
