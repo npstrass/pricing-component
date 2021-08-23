@@ -14,7 +14,6 @@
   --text: hsl(225, 20%, 60%);
 
   font-size: 15px;
-  /* weights 600 and 800 */
 }
 
 html,
@@ -24,6 +23,201 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+body {
+  color: var(--text);
+  background: url(images/bg-pattern.svg), var(--bg-main);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -100px -200px, center;
+}
+
 * {
   margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  color: var(--bg-text-and-cta);
+  margin-bottom: 1rem;
+}
+
+.bodyText {
+  padding: 0 2rem;
+}
+
+.billingWrapper,
+.featureWrapper {
+  font-size: 0.85rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  margin: 4rem auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background: url(images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 2rem;
+  margin-bottom: 6rem;
+}
+
+.componentContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: var(--bg-price-component);
+  box-shadow: 1px 3px 12px hsla(0, 0%, 0%, 0.25);
+}
+
+.dataWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+#costNum {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--bg-text-and-cta);
+}
+
+.sliderWrapper {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--empty-slider);
+  margin-bottom: 2rem;
+}
+
+.slider {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: var(--full-slider);
+}
+
+.slider::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    content: '';
+    background: url(images/icon-slider.svg), var(--bg-slider);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem var(--full-slider);
+}
+
+.billingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.billingBtn {
+  position: relative;
+  width: 2.25rem;
+  height: 1rem;
+  border-radius: 1rem;
+  margin: 0 .5rem;
+  background: var(--bg-toggle);
+}
+
+.billingSwitch {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translate(0, -50%);
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--bg-price-component);
+}
+
+.yearlyBill {
+    position: relative;
+}
+
+.yearlyBill::after {
+    position: absolute;
+    top: 50%;
+    right: -.25rem;
+    transform: translate(100%, -50%);
+    content: '25%';
+    padding: .25rem 0;
+    width: 2.5rem;
+    border-radius: 10rem;
+    color: var(--text-discount);
+    background: var(--bg-discount);
+
+}
+
+.horRule {
+  width: 100%;
+  height: 0.0125rem;
+  background: var(--empty-slider);
+  margin-bottom: 2rem;
+}
+
+.featureWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+li img {
+  margin-right: 0.25rem;
+}
+
+.btn {
+  padding: 0.75rem 2.5rem;
+  border-radius: 10rem;
+  color: var(--text-cta);
+  background: var(--bg-text-and-cta);
+}
+
+@media (min-width: 680px) {
+    .dataWrapper {
+        flex-direction: row;
+    }
+
+    .yearlyBill::after {
+        right: -1rem;
+        content: '25% discount';
+        width: 6.75rem;
+    }
+
+    .featureWrapper {
+        flex-direction: row;
+    }
 }

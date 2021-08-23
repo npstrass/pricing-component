@@ -7,8 +7,44 @@
     <title>pricing component</title>
   </head>
   <body>
-    Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
-    required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
-    Unlimited websites 100% data ownership Email reports Start my trial
+    <div class="container">
+      <div class="header">
+        <h1>Simple, traffic-based pricing</h1>
+        <p class="bodyText">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+      </div>
+
+      <div class="componentContainer">
+
+        <div class="dataWrapper">
+          <p class='pageViews'><span id='viewNum'>100</span>k pageviews</p>
+          <p class='cost'><span id='costNum'>$16.00</span> /month</p>
+        </div>
+
+        <div class="sliderWrapper">
+          <div class="slider"></div>
+        </div>
+
+        <div class="billingWrapper">
+          <p>Monthly Billing</p>
+          <div class="billingBtn">
+            <div class="billingSwitch"></div>
+          </div>
+          <p class='yearlyBill'>Yearly Billing</p>
+        </div>
+
+        <span class='horRule'></span>
+
+        <div class="featureWrapper">
+          <ul>
+            <li><img src='images/icon-check.svg' alt=''>Unlimited websites</li>
+            <li><img src='images/icon-check.svg' alt=''>100% data ownership</li>
+            <li><img src='images/icon-check.svg' alt=''>Email reports</li>
+          </ul>
+          <p class="btn">Start my trial</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
