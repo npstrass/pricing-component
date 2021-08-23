@@ -33,7 +33,7 @@
   background: url(images/icon-slider.svg), hsl(174, 86%, 45%);
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 0.5rem 1rem hsl(174, 77%, 80%);
+  box-shadow: 0 0.75rem .75rem hsl(174, 77%, 80%);
 
   cursor: pointer;
 }
@@ -46,6 +46,7 @@
   outline: none;
   border: none;
   background: url(images/icon-slider.svg), hsl(174, 86%, 45%);
+  box-shadow: 0 0.75rem .75rem hsl(174, 77%, 80%);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
