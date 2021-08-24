@@ -30,4 +30,16 @@ function updateValues() {
   } else {
     costNum.innerText = slider.value;
   }
+
+  if (slider.value === "8") {
+    viewNum.innerText = 50;
+  } else if (slider.value === "12") {
+    viewNum.innerText = 75;
+  } else if (slider.value === "16") {
+    viewNum.innerText = 100;
+  } else if (slider.value === "20") {
+    viewNum.innerText = 125;
+  } else if (slider.value === "24") {
+    viewNum.innerText = 150;
+  }
 }
